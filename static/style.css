@@ -39,6 +39,10 @@ header p{
     overflow: hidden;
     
 }
+.head-det{
+    display:flex;
+    flex-direction:column;
+}
 body{
     background-color: rgb(118, 118, 209);
 }
