@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Righteous', cursive;
+    transition: all ease-in-out 0.3s;  
+}
+header{
+    position:fixed;
+    display: flex;
+    left:0;
+    top:0;
+    right:0;
+    height:120px;
+    background-color: #040b14;
+    box-shadow:1px 1px 10px whitesmoke;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+            
+}
+header img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border: 2px solid whitesmoke;
+    margin:9px;
+    transition: all ease-in-out 0.3s;  
+
+}
+header p{
+    font-size: 60px;
+    color: whitesmoke;
+    align-self: center;
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    
+}
+body{
+    background-color: rgb(118, 118, 209);
+}
+@media (orientation:landscape){
+    header{
+        flex-direction: column;
+        height: 100%;
+        width:200px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 15px;
+        box-shadow:1px 1px 10px whitesmoke;
+        background-color: #040b14;
+        transition: all ease-in-out 0.5s;
+        z-index: 3;
+    }
+    header img{
+        display: block;
+        margin: 15px auto;
+        width: 150px;
+        height:150px;
+        border: 3px solid whitesmoke;
+        border-radius: 50%;
+        border-top-left-radius: 0;;
+        box-sizing: border-box;
+    }
+    header p{
+        font-family: 'Righteous', cursive;
+        font-size: 30px;
+        color: whitesmoke;
+        text-align: center;
+        margin-bottom: 5px;
+                }
+    header p::first-letter{
+
+
+        color: red;
+        font-weight: bold;
+        font-size: 200%;
+    }
+}
